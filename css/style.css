@@ -1,0 +1,421 @@
+:root {
+  --sidebar-text-color: #fff;
+  --title-text-color: #000;
+  --secondary-text-color: #a8a8a8;
+  --text-sections-link: #49525f;
+  --text-projects-link: #000;
+  --accent-color: #fb6d3a;
+  --primary-bg-color: #ffffff;
+  --portfolio-secondary-color: #f5f4fa;
+  --bg-color-secondary: #2f303a;
+  --bg-color-secondary: #f5f7fa;
+  --bg-color-sidebar: #1e2939;
+  --timingFn: cubic-bezier(0.4, 0, 0.2, 1);
+  --marker: #fff;
+  --star: #ffef9f;
+  --active-star: #ffd300;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--bg-color-secondary);
+}
+.main-conteiner {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 1200px;
+  background-color: var(--bg-color);
+  margin: 40px auto;
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+}
+/*main content*/
+
+.main-content-section {
+  padding: 100px 90px;
+}
+
+.main-content-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 27px;
+  color: var(--title-text-color);
+  margin-bottom: 10px;
+}
+
+/*about-me-section*/
+
+.about-me-section {
+  margin-bottom: 40px;
+}
+
+.about-me-profession {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--title-text-color);
+  margin-bottom: 20px;
+}
+.about-me-name {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 55px;
+  color: black;
+  margin-bottom: 25px;
+}
+.about-me-descrption {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14;
+  line-height: 24px;
+  color: var(--title-text-color);
+  margin-bottom: 40px;
+}
+
+/*my-projects-section*/
+
+.projects {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--title-text-color);
+}
+.projects__span {
+  color: var(--accent-color);
+}
+
+.my-projects-section {
+  margin-bottom: 50px;
+}
+.my-projects-list {
+  padding: 0 0 0 17px;
+}
+
+.my-projects-item {
+  color: var(--title-text-color);
+  font-weight: bold;
+}
+.my-projects-link {
+  margin-right: 5px;
+  width: 50%;
+  overflow: hidden;
+  white-space: nowrap;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  color: var(--text-projects-link);
+  transition: color 250ms var(--timingFn);
+}
+/* .my-projects-link:after {
+  margin-left: 5px;
+  content: "..............................................................................................................................";
+} */
+.flex {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.my-projects-link:hover,
+.my-projects-link:focus {
+  color: var(--accent-color);
+}
+.my-projects-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--text-projects-link);
+  margin-left: 5px;
+}
+.my-projects-bracket {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--title-text-color);
+}
+.projects__section--icon {
+  text-decoration: none;
+}
+.projects__section--icon:hover {
+  fill: var(--accent-color);
+}
+/*my work experience*/
+.my-work-experience-company {
+  color: var(--title-text-color);
+  text-decoration: none;
+}
+.my-work-experience-company:hover,
+.my-work-experience-company:focus {
+  color: var(--accent-color);
+  transition: color 250ms var(--timingFn);
+}
+.my-work-experience-position {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0 0 10px 0;
+}
+.my-work-experience-period {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: var(--secondary-text-color);
+  margin: 0 0 10px 0;
+}
+.my-work-experience-divaider {
+  color: var(--title-text-color);
+}
+.my-work-experience-duties {
+  padding: 0 0 0 18px;
+}
+.my-work-experience-duty {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--text-projects-link);
+}
+.my-work-experience-company-block {
+  margin: 0 15px 0 0;
+}
+/*my education*/
+.my-education-universitiy {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  color: var(--title-text-color);
+}
+.my-education-universitiy:focus,
+.my-education-universitiy:hover {
+  color: var(--accent-color);
+  transition: color 250ms var(--timingFn);
+}
+
+.my-education-period {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: var(--secondary-text-color);
+}
+.my-education-specialty {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--title-text-color);
+}
+
+/*sidebar-sections*/
+
+.sidebar-sections {
+  background-color: var(--bg-color-sidebar);
+  width: 370px 1319px;
+  padding: 40px 0 0;
+}
+
+.sidebar-sections {
+  margin: 25px 0 0 37px;
+}
+
+.sidebar-titele {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 27px;
+  color: var(--sidebar-text-color);
+  margin-left: 17px;
+}
+/*contacts-sections*/
+
+.contacts-sections-type {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--sidebar-text-color);
+  margin-left: 20px;
+}
+
+.contacts-sections-link {
+  /* color: var(--text-sections-link); */
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--primary-bg-color);
+  transition: color 250ms var(--timingFn);
+}
+.contacts-sections-link:hover,
+.contacts-sections-link:focus {
+  color: var(--accent-color);
+}
+
+.contacts__social {
+  padding-left: 15px;
+}
+.contacts__social--icon {
+  list-style-type: none;
+}
+
+.contacts__social--icon:not(:last-child) {
+  margin-bottom: 10px;
+}
+.social-icon {
+  fill: var(--accent-color);
+}
+
+/*Skills*/
+.Tech-Skills--sections {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 27px;
+  color: var(--sidebar-text-color);
+}
+
+.Tech-Skills {
+  padding-left: 15px;
+}
+
+.Tech-Skills-item {
+  list-style-type: none;
+}
+.Tech-Skills-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+.Tech-Skills-item-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--sidebar-text-color);
+}
+/*Soft Skills sections*/
+.Soft-Skills {
+  padding: 0%;
+  padding-left: 40px;
+}
+
+.Soft-Skills-item {
+  color: var(--marker);
+}
+
+.Soft-Skills-item-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--sidebar-text-color);
+}
+/* Reting  Rus*/
+.reiting {
+  position: relative;
+  font-size: 25px;
+  display: inline-block;
+}
+.reiting::before {
+  content: "★★★★★";
+  display: block;
+}
+.reiting__items {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row-reverse;
+  overflow: hidden;
+}
+.reiting__items-item {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+}
+.reiting__items-label {
+  flex: 0 0 20%;
+  height: 100%;
+  cursor: pointer;
+  color: #fff;
+}
+.reiting__items-label::before {
+  content: "★";
+  display: block;
+  transition: color 0.3s ease 0s;
+}
+.reiting__items-item:checked,
+.reiting__items-item:checked ~ .reiting__items-label {
+  color: var(--active-star);
+}
+
+.reiting__items-label:hover,
+.reiting__items-label:hover ~ .reiting__items-label,
+.reiting__items-label:checked ~ .reiting__items-label:hover {
+  color: var(--star);
+}
+/* Reting  UA*/
+.reiting {
+  position: relative;
+  font-size: 25px;
+  display: inline-block;
+}
+.reiting::before {
+  content: "★★★★★";
+  display: block;
+}
+.reiting__items {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row-reverse;
+  overflow: hidden;
+}
+.reiting__items-item {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+}
+.reiting__items-label {
+  flex: 0 0 20%;
+  height: 100%;
+  cursor: pointer;
+  color: #fff;
+}
+.reiting__items-label::before {
+  content: "★";
+  display: block;
+  transition: color 0.3s ease 0s;
+}
+.reiting__items-item:checked,
+.reiting__items-item:checked ~ .reiting__items-label {
+  color: var(--active-star);
+}
+
+.reiting__items-label:hover,
+.reiting__items-label:hover ~ .reiting__items-label,
+.reiting__items-label:checked ~ .reiting__items-label:hover {
+  color: var(--star);
+}
